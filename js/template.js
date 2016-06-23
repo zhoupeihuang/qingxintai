@@ -1,3 +1,25 @@
+$.ajax({
+	type: "get",
+	url: "template/header.html",
+	dataType: "html",
+	success: function(data) {
+		$(".maxBox").before(data)
+	},
+	error: function(XMLHttpRequest, textStatus, errorThrown) {
+		alert(errorThrown);
+	}
+});
+$.ajax({
+	type: "get",
+	url: "template/footer.html",
+	dataType: "html",
+	success: function(data) {
+		$(".maxBox").after(data)
+	},
+	error: function(XMLHttpRequest, textStatus, errorThrown) {
+		alert(errorThrown);
+	}
+});
 //返回顶部的方法
 function pageScroll(){
     //把内容滚动指定的像素数（第一个参数是向右滚动的像素数，第二个参数是向下滚动的像素数）
