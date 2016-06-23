@@ -1,18 +1,186 @@
+@import url(baseStyle.less);
 body{
     background-image: url(../images/maxBG.png);
     background-position: left top;
     background-repeat: repeat-x;
     background-size: 1005 auto;
     color: #333;
+    font-family: "Microsoft Yahei",Arial;
 }
 .maxBox {
-    position: relative;
+    position: @Pr;
     width: 1200px;
     margin: 0px auto;
-    min-height: 600px;
+    min-height: 600px;  
 } 
-.headerBox{}
-.navPic{}
-.navBox{}
-.mainBox{}
-.footerBox{}
+.headerBox{
+    width: 1200px;
+    position: relative;
+    height: 82px;
+    overflow: hidden;
+}
+.qxt_logo{
+    float: left;
+    margin: 37px 82px 23px 18px;
+}
+.qxt_nav{
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 133px;
+}
+.qxt_nav li{
+    float: left;
+    margin-left: 7px;
+    cursor: pointer;
+}
+.qxt_nav li a{
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 20px;
+    color:@white;
+    text-shadow: @t_shadow;
+    text-decoration: none;
+}
+.qxt_nav li:hover a,.qxt_nav li.cur a{
+    color:#04c0ff;
+    background-color: @white;
+    text-shadow: none;
+}
+.qxt_headRight{
+    float: right;
+    margin-top: 38px;   
+}
+.qxt_searchBox{
+    float: left;
+    width: 132px;
+    height: 23px;
+    position: @Pr;
+    background: url(../images/qxt_searchbg.png) 0 0 no-repeat;
+    margin-right: 45px;
+}
+.qxt_searchBox input{
+    width: 109px;
+    height: 20px;
+    line-height: 20px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    color:@black;
+    font-size: @font12;
+    background: none;
+    border: none;
+    outline: none;
+}
+.qxt_searchIcon{
+    position: @Pa;
+    right:8px;
+    top:4px;
+    z-index: 0;
+    width: 14px;
+    height: 13px;
+    background: url(../images/qxt_seachIcon.png) 0 0 no-repeat;
+}
+.qxt_loginReg{
+    float: left;
+    font-size: @font12;
+    text-shadow: @t_shadow;
+    color:@white;
+}
+.qxt_loginReg a{
+    color:@white;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.mainBox{
+    margin: 0 auto;
+    min-height: 800px;
+    position: relative;
+    width: 100%;
+}
+.footerBox{
+    height: 160px;
+    width: 100%;
+    background-color: #282828;
+}
+/*------------------注册------------------*/
+.signUpBox{
+    width: 364px;
+    height: 457px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 190px;
+    background: url(../images/white60.png) repeat;
+    border-radius: 20px;
+}
+.signUpTitle{
+    width: 90%;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 auto;
+    position: relative;
+    top: 65px;
+    bottom: 45px;
+    font-size: 24px;
+    text-align: center;
+    color: #00afec;
+}
+.signUpMain{
+    width: 286px;
+    height: 320px;
+    margin: 0 auto;
+    top: 100px;
+    position: relative;
+//  border: 1px #00afec solid;
+}
+.signUpMain>p{
+    font-size: 12px;
+    color: #9fa0a0;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    text-align: center;
+    display: inline-block;
+}
+.signUpIpt{
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    box-shadow: none;
+    border: 1px #e3e4e4 solid;
+    text-indent: 40px;
+    font-size: 14px;
+     background-image: url(../images/pwd.png);
+     background-repeat: no-repeat;
+     background-position:7px center;
+     margin-bottom: 16px;
+     padding: 0px 0px 2px 0px;
+}
+.signUpIptUser{
+    background-image: url(../images/user.png) !important;
+}
+.signUpBtn{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background-color: #00afec;
+    border-radius: 30px;
+    box-shadow: none;
+    border: none;
+}
+.quickLogin{
+    width: 100%;
+    height: 90px;
+    border: 1px #00afec solid;
+}
+.minHeaderPic{
+    width: 1200px;
+    height: 80px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position:left center;
+    background-size: inherit;
+    margin: 0 auto;
+    position: relative;
+}

@@ -78,6 +78,7 @@ select {
     padding: 0;
     font: 12px/1.5  "微软雅黑", arial;
     font-family:  "微软雅黑", arial;
+    outline:none;
 }
 div {
     scrollbar-face-color: #44aaff;
@@ -183,7 +184,7 @@ a {
     cursor: default;
 }
 a:hover {
-    color: @gray;
+    color: @blue;
     text-decoration: underline;
 }
 article,
@@ -231,13 +232,17 @@ table {
 @pink: #ff5959;
 @red: #ff425d;
 @white: #ffffff;
-@block: #000000;
+@black: #000000;
 @font12: 12px;
 @font14: 14px;
 @font16: 16px;
 @font18: 18px;
 @font30: 30px;
 @font55: 55px;
+@Pr: relative;
+@Pa: absolute;
+@Pf: fixed;
+@t_shadow: 0 1px 0 #035ce0;
 @Pr: relative;
 @Pa: absolute;
 @Pf: fixed;
@@ -335,7 +340,7 @@ table {
     -moz-border-top-right-radius: @radius;
     border-top-right-radius: @radius;
 }
-.alpha(@num1:94, @num2:0.94) {
+.toumingdu(@num1:94, @num2:0.94) {
     filter:alpha(opacity=@num1);
     -moz-opacity: @num2;
     -khtml-opacity: @num2;
@@ -503,6 +508,13 @@ img {
     width: inherit;
     height: inherit;
 }
-
-
-
+.whiteBg{
+    background-color: #fff;
+    .toumingdu(100,1);
+}
+.blueF{
+    color: #00afec ;
+}
+.grayF{
+     color: #9fa0a0;
+}
