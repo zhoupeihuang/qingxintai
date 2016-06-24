@@ -3,7 +3,7 @@ body{
     background-image: url(../images/maxBG.png);
     background-position: left top;
     background-repeat: repeat-x;
-    background-size: 1005 auto;
+    background-size: 100% auto;
     color: #333;
     font-family: "Microsoft Yahei",Arial;
 }
@@ -17,6 +17,7 @@ body{
     width: 1200px;
     position: relative;
     height: 82px;
+    margin: 0 auto;
     overflow: hidden;
 }
 .qxt_logo{
@@ -25,9 +26,7 @@ body{
 }
 .qxt_nav{
     float: left;
-    font-size: 18px;
     font-weight: bold;
-    margin-right: 133px;
 }
 .qxt_nav li{
     float: left;
@@ -37,6 +36,7 @@ body{
 .qxt_nav li a{
     display: inline-block;
     height: 35px;
+    font-size: 18px;
     line-height: 35px;
     padding: 0 20px;
     color:@white;
@@ -184,3 +184,293 @@ body{
     margin: 0 auto;
     position: relative;
 }
+/*--------------------------活动列表 begin--------------------------------*/
+.activityLNav{
+    width: 320px;
+    height: 34px;
+    margin: 0 auto;
+    background: url(../images/white40.png) repeat;
+    border-radius: 20px;
+    
+}
+.activityLNav ul li{
+    width: 49.5%;
+    border-right: 1px #fff solid;
+    padding: 2px 0;
+    color:#04c0ff ;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    height: 28px;
+}
+.activityLNav ul li:last-child{
+    border-right: none;
+}
+
+.actlActive{
+    color: #fff !important;
+}
+.activityLFormBox{
+    width: 100%;
+    height: 186px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: url(../images/white60.png) repeat;
+}
+.activityLFormBox>table{
+    position: relative;
+    margin: 0 auto;
+    width: 770px;
+    height: 120px;
+    top: 36px;
+    font-size: 14px;
+    color: #3a3c3e;
+//  border: 1px red solid;
+}
+.activityLFormBox>table select{
+    min-width: 135px;
+}
+.activityLPicBox{
+    width: 100%;
+    height: 750px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.activityLPicBox figure{
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.activityLPicBox figure img{
+   
+}
+.activityLPicBox  figcaption>table{
+    width: 360px;
+    height: 70px;
+    color: #fff;
+    font-size: 14px;
+}
+.activityLPicBox  figcaption>table td{
+    vertical-align: bottom;
+}
+.activityLPicBox  figcaption>table tr:last-child td{
+    vertical-align: top;
+}
+.girlHBox{
+    width: 60px;
+    height: 60px;
+    border-radius: 80px;
+    border: 2px white solid;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: #e1e1e3;
+    display: inline-block;
+    vertical-align: super;
+}
+.activityLPicBox  figure:nth-child(1) figcaption ,.activityLPicBox  figure:nth-child(2) figcaption{
+    position: absolute;
+    top:290px;
+//  top: 360px;
+    width: 100%;
+    height: 70px;
+    background: url(../images/blackJianbian.png) repeat-x;
+}
+
+.activityLPicBox  figure:nth-child(3) figcaption ,.activityLPicBox  figure:nth-child(4) figcaption,.activityLPicBox  figure:nth-child(5) figcaption{
+    position: absolute;
+    top:252px;
+//  top: 323px;
+    width: 100%;
+    height: 70px;
+    background: url(../images/blackJianbian.png) repeat-x;
+}
+.activityLPicBox figure:nth-child(1){
+    width: 740px;
+    height: 360px;
+    margin-bottom: 18px;
+    margin-right:18px ;
+}
+.activityLPicBox figure:nth-child(2){
+    width: 440px;
+    height: 360px;
+    margin-bottom: 18px;
+}
+.activityLPicBox figure:nth-child(3){
+    width: 360px;
+    height: 322px;
+    margin-bottom: 18px;
+    margin-right:18px ;
+}
+.activityLPicBox figure:nth-child(4){
+    width: 360px;
+    height: 322px;
+    margin-bottom: 18px;
+    margin-right:18px ;
+}
+.activityLPicBox figure:nth-child(5){
+    width: 440px;
+    height: 322px;
+    margin-bottom: 18px;
+}
+/*-------------------------活动列表 end---------------------------------*/
+/*------------------活动详情------------------*/
+.qxt_aDeatil_member{
+    margin-top: -80px;
+    height: 142px;
+    background: url(../images/qxt_gray_bg.png) repeat-x left bottom;
+    padding: 0 35px;
+    position: relative;
+}
+.qxt_aDetail_portrait{
+    display: inline-block;
+    vertical-align: top;
+    width: 136px;
+    height: 136px;
+    position: relative;
+    margin-right: 25px;
+    float: left;
+    cursor: pointer;
+}
+.qxt_aDetail_portrait>img{
+    width: 100%;
+    height: 100%;
+}
+.qxt_aDetail_portrait>em{
+    position: absolute;
+    width: 31px;
+    height: 30px;
+    right: 4px;
+    bottom: 8px;
+    z-index: 0;
+    background: url(../images/qxt_v.png) no-repeat left top;
+}
+.qxt_aDetail_zan{
+    float: right;
+    font-size: 14px;
+    .white;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.qxt_aDetail_zan>span{
+    background: url(../images/qxt_love.png) no-repeat left top;
+    display: inline-block;
+    vertical-align: top;
+    width: 37px;
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 5px;
+}
+.qxt_aDeatil_info{
+    float: left;
+    margin-top: 34px;
+    max-width: 650px;
+    font-weight: bold;
+}
+.qxt_aDeatil_tit{
+    .white;
+    font-size: 24px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    margin-bottom: 20px;
+}
+a.qxt_aDetail_username{
+    color:#595757;
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+}
+a.qxt_aDetail_username:hover{
+    color:#02b0ec;
+}
+a.qxt_aDetail_attention{
+    display: inline-block;
+    width: 59px;
+    height: 23px;
+    line-height: 23px;
+    font-size: 12px;
+    color:#02b0ec;
+    background: url(../images/qxt_attention.png) no-repeat left top;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    margin-top: 4px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+.qxt_aDetail_time,.qxt_aDetail_view{
+    display: inline-block;
+    vertical-align: top;
+    color:#595757;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.qxt_aDetail_time{
+    padding-left: 18px;
+    background: url(../images/qxt_clock.png) no-repeat left center;
+}
+.qxt_aDetail_view{
+    padding-left: 23px;
+    background: url(../images/qxt_view.png) no-repeat left center;
+}
+.qxt_aDetail_con{
+    padding: 35px 100px 100px 100px;
+    background-color: @white;
+    color:@black;
+}
+.qxt_aDetail_txt{
+    .font14;
+    line-height: 20px;
+}
+.qxt_aDetail_txt img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.qxt_aDetail_option{
+    text-align: center;
+}
+.qxt_aDetail_option>a{
+    display: inline-block;
+    .white;
+    font-size: 12px;
+    width: 117px;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 28px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    vertical-align: top;
+}
+.bdsharebuttonbox{
+    display: inline-block;
+    vertical-align: top;
+}
+.qxt_aDetail_copy{
+    background: url(../images/qxt_copy_icon.jpg) no-repeat 6px center #b02e0a;
+}
+.qxt_aDetail_collection{
+    background: url(../images/qxt_collection_icon.jpg) no-repeat 6px center #b02e0a;
+}
+
+.qxt_gDeatil_tit{
+    max-width: 1003px;
+    margin: -62px auto 30px;
+    color: #fff;
+    font-size: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+/*成长节点详情*/
